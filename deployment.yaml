@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicdlearning
+  labels:
+    app: cicdlearning
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicdlearning
+  template:
+    metadata:
+      labels:
+        app: cicdlearning
+    spec:
+      containers:
+        - name: cicdlearning
+          image: 654557142498.dkr.ecr.us-east-2.amazonaws.com/cicdlearning
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
