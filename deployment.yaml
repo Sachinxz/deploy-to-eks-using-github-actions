@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cicdlearning
-          image: 654557142498.dkr.ecr.us-east-2.amazonaws.com/cicdlearning
+          image: 654557142498.dkr.ecr.us-east-2.amazonaws.com/cicdlearning:1.1
           imagePullPolicy: Always
           ports:
             - containerPort: 80
